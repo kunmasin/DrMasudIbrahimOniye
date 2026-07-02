@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Masud Ibrahim Oniye | Senior Lecturer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #0f172a;
+            --accent-gold: #fbbf24;
+            --text-main: #334155;
+            --bg-soft: #f1f5f9;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg-soft); color: var(--text-main); line-height: 1.6; display: flex; }
+
+        /* Sidebar Navigation */
+        nav {
+            width: 280px;
+            height: 100vh;
+            background: var(--primary-dark);
+            color: white;
+            position: fixed;
+            padding: 2rem 1rem;
+            overflow-y: auto;
+        }
+
+        .profile-img-placeholder {
+            width: 120px;
+            height: 120px;
+            border: 3px solid  var(--accent-gold);
+            background: var(--primary-dark);
+            border-radius: 100%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary-dark);
+        }
+
+        nav h2 { font-size: 1.2rem; text-align: center; margin-bottom: 0.5rem; color: var(--accent-gold); }
+        nav p { font-size: 0.8rem; text-align: center; opacity: 0.7; margin-bottom: 2rem; }
+
+        nav ul { list-style: none; }
+        nav ul li { margin-bottom: 0.5rem; }
+        nav ul li a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            display: block;
+            padding: 0.8rem;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-size: 0.9rem;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(0, 0, 255);
+        }
+
+        nav ul li a:hover { background: rgba(255,255,255,0.1); color: var(--accent-gold); }
+
+        /* Main Content */
+        main { flex: 1; margin-left: 280px; padding: 3rem; }
+
+        section {
+            background: var(--white);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        h1 { color: var(--primary-dark); font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 3px solid var(--accent-gold); display: inline-block; }
+        h3 { color: var(--primary-dark); margin: 1.5rem 0 1rem; border-left: 4px solid var(--accent-gold); padding-left: 10px; }
+
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 1rem; }
+        .info-card { background: var(--bg-soft); padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0; }
+        .info-card strong { color: var(--primary-dark); display: block; font-size: 0.85rem; text-transform: uppercase; }
+
+        .list-box { margin-bottom: 15px; padding: 12px; border-bottom: 1px solid #f1f5f9; }
+        .list-box:last-child { border-bottom: none; }
+        .date-tag { background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-right: 10px; }
+
+        .social-icons { margin-top: 1rem; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+        .social-icons a { color: white; background: rgba(255,255,255,0.1); padding: 8px; border-radius: 5px; font-size: 1.1rem; }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            nav { width: 100%; height: auto; position: relative; }
+            main { margin-left: 0; padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img class="profile-img-placeholder" src="dad.jpeg" alt=""> <!--<i class="fas fa-user-tie">
+            
+        </i></div>-->
+        <h2>DR. M.I. ONIYE</h2>
+        <p>Senior Lecturer | Arts Education</p>
+        <p>Email: <a style="color: #ffb700" href="mailto:oniyemasud@unilorin.edu.ng" target="_blank">oniyemasud@unilorin.edu.ng</a></p>
+        <div class="social-icons">
+            <a href="https://scholar.google.com/citations?user=u_vZPZEAAAAJ" title="Scholar"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://orcid.org/0000-0002-2824-6972" title="ORCID"><i class="fab fa-orcid"></i></a>
+            <a href="https://www.researchgate.net/profile/Masud-Oniye" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+            <a href="https://www.linkedin.com/in/dr-masud-ibrahim-oniye-584374137/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <!--<a href="https://www.scopus.com/authid/detail.uri?authorId=57217630352" title="Scopus"><i class="fab fa-scopus"></i></a>
+            <a href="https://uniilorin.academia.edu/Moniye" title="Academia"><i class="fab fa-academia"></i></a>
+            <a href="https://www.webofscience.com/wos/author/record/IST-7601-2023" title="Web of Science"><i class="fab fa-webofscience"></i></a>
+            <a href="https://www.researchid.co/rid54533" title="Research ID"><i class="fab fa-researchid"></i></a>-->
+        </div>
+        <br>
+        <ul>
+            <li><a href="#personal"><i class="fas fa-info-circle"></i> Personal Data</a></li>
+            <li><a href="#education"><i class="fas fa-university"></i> Academic Qualifications</a></li>
+            <li><a href="#experience"><i class="fas fa-briefcase"></i> Career Path</a></li>
+            <li><a href="#training"><i class="fas fa-chalkboard-teacher"></i> Training & Workshops</a></li>
+            <li><a href="#publications"><i class="fas fa-book"></i> Journal Articles</a></li>
+            <li><a href="#conferences"><i class="fas fa-users"></i> Conferences</a></li>
+            <li><a href="#teaching"><i class="fas fa-graduation-cap"></i> Teaching & Projects</a></li>
+            <li><a href="#service"><i class="fas fa-hands-helping"></i> Community Service</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="personal">
+            <h1>Oniye, Masud Ibrahim</h1>
+            <div class="info-grid">
+                <div class="info-card"><strong>Current Rank</strong>Senior Lecturer (CONUASS 5/1)</div>
+                <div class="info-card"><strong>Email</strong>oniyemasud@unilorin.edu.ng</div>
+                <div class="info-card"><strong>Department</strong>Arts Education, University of Ilorin</div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h3>Academic Qualifications</h3>
+            <div class="list-box"><span class="date-tag">2023</span> <strong>Ph.D. Education and Development</strong> - Universiti Teknologi Malaysia (UTM)</div>
+            <div class="list-box"><span class="date-tag">2006</span> <strong>M. Ed. History and Policy of Education</strong> - University of Ilorin</div>
+            <div class="list-box"><span class="date-tag">2006</span> <strong>Post Graduate Diploma in Education (PGDE)</strong> - University of Ilorin</div>
+            <div class="list-box"><span class="date-tag">1991</span> <strong>B. A. (Islamic Studies)</strong> - University of Ilorin</div>
+            <div class="list-box"><span class="date-tag">1984</span> <strong>WASC</strong> - Govt. Secondary School, Ilorin</div>
+        </section>
+
+        <section id="training">
+            <h3>Workshops & Professional Training <!--(38 Entries)--></h3>
+            <div style="max-height: 400px; overflow-y: auto;">
+                <div class="list-box"><span class="date-tag">2025</span> Defining Research and Innovation Strategy (MAAUN, Maradi)</div>
+                <div class="list-box"><span class="date-tag">2024</span> Mastering AI in Art, Animation, and Website Creation (Vitalearning)</div>
+                <div class="list-box"><span class="date-tag">2023</span> Artificial Intelligence for Education and Research (Vitalearning)</div>
+                 <div class="list-box"><span class="date-tag">2023</span> Workshop on Practical Approach to Getting Materials Online Using Search Engines & 
+Understanding the Manual and Digital Techniques of Paraphrasing in Research  - Centre for Research, Industrial Linkage and International Cooperation Al-Hikmah University</span></div>
+                <div class="list-box"><span class="date-tag">2022</span> High Impact Publishing Class for Students and Academician- An attempt to Extract 
+Journals from Thesis by School of Postgraduate Studies
+ - Universiti Teknologi Malaysia</span></div>
+                <div class="list-box"><span class="date-tag">2022</span> Professional Skill and Courseware Development for Teaching Effectiveness in the 
+University (2 Days Workshop)
+ - Centre for Research, Industrial Linkage and 
+International Cooperation, Al-Himah University, Ilorin, Nigeria</span></div>
+                <div class="list-box"><span class="date-tag">2022</span> Structural Course for better Citation: Mendeley workshop - Postgraduate Student
+ Society. Universiti Teknologi Malaysia
+</span></div>
+  <div class="list-box"><span class="date-tag">2022</span> Retooling Educators for 21st Century Excellence (UNILORIN)</div>
+                <div class="list-box"><span class="date-tag">2020</span> Research Methodology and Data Analysis (IBM SPSS) - UTM, Malaysia</div>
+                <div class="list-box"><span class="date-tag">2020</span> How to Increase Productivity, Structural Course  - Postgraduate Student Society
+ Universiti Teknologi Malaysia
+</span></div>
+                <div class="list-box"><span class="date-tag">2020</span> Constructing Literature Review in PhD Study - UTM, Universiti Kebangsaan Malaysia, 
+and Universitas Sebeles Maret
+</span></div>
+                <div class="list-box"><span class="date-tag">2020</span> Thesis Writing: Preparing for Submission - Postgraduate Student Society Universiti 
+Teknologi Malaysia
+</span></div>
+                <div class="list-box"><span class="date-tag">2020</span> Webinar on Skill of Research Paper Writing - RKDF University, Bhopal (M.P)- India</span></div>
+                <div class="list-box"><span class="date-tag">2020</span> Transition from Onsite to Online Instruction - Association of Innovative Technology 
+Integration in Education
+</span></div>
+                <div class="list-box"><span class="date-tag">2019</span> Database Training - Elsevier </span></div>
+                <div class="list-box"><span class="date-tag">2019</span> Structured Course of Sharing Session: Preparing Your Proposal Defense - PGSS
+ Universiti Teknologi Malaysia
+</span></div>
+                <div class="list-box"><span class="date-tag">2018</span> Academic Talk on How to Defend Thesis & How to Get your Papers Published in 
+Indexed Journals
+ - Dewan Sultan Iskandar, Universiti Teknologi Malaysia</span></div>
+                <div class="list-box"><span class="date-tag">2018</span> Writing for Publication workshop 2 - Universiti Teknologi 
+Malaysia
+</span></div>
+                <div class="list-box"><span class="date-tag">2016</span> Qualitative Data Analysis using NVivo - UUM, Malaysia</div>
+                <div class="list-box"><span class="date-tag">2016</span> Workshop on introduction to Basic and Advanced SPSS - nasis Postgraduate Scholars, 
+Universiti Utara, Malaysia.
+</span></div>
+                <div class="list-box"><span class="date-tag">2016</span> Workshop on Introduction to Basic and Advanced Smart – PLS - Inasis Postgraduate 
+Scholars, Universiti Utara, Malaysia
+</span></div>
+                <div class="list-box"><span class="date-tag">2016</span> Workshop on Stress Management  - Universiti Utara, Malaysia</span></div>
+                <div class="list-box"><span class="date-tag">2016</span> Postgraduate Colloquium 2016 -  Awang Had Salleh Graduate School of Arts and 
+Sciences Universiti Utara Malaysia
+</span></div>
+                <div class="list-box"><span class="date-tag">2015</span> Workshop for newly recruited Academic Staff in the Faculty of Education, at the Faculty 
+Board Room
+ - University of Ilorin</span></div>
+                <div class="list-box"><span class="date-tag">2015</span> Workshop on Monitoring for Effective Role Performance - University of Ilorin</span></div>
+                <div class="list-box"><span class="date-tag">2014</span> Counselling and Human Development Centre (UCHDC) - University Auditorium</span></div>
+                <div class="list-box"><span class="date-tag">2014</span> CBT Question Authoring for Universities (UNILORIN)</div>
+                <div class="list-box"><span class="date-tag">2013</span> Training on Goggle Applications - COMSIT Directorate University of Ilorin</span></div>
+                <div class="list-box"><span class="date-tag">2013</span> Workshop on paper writing - Department of Arts and Social Education Faculty of 
+Education, University of Ilorin at ARMTI
+</span></div>
+<div class="list-box"><span class="date-tag">2013</span> Workshop on Promoting and Rating of Publications - University of Ilorin
+</span></div>
+                <div class="list-box"><span class="date-tag">2012</span> Workshop on Excellence in Teaching and Research - Centre for Research Development 
+and in-house Training (CREDIT)
+ UNILORIN</span></div>
+                <div class="list-box"><span class="date-tag">2012</span> Workshop on Equipping Staff for Optimum Performance - (CREDIT), University of 
+Ilorin
+</span></div>
+                <div class="list-box"><span class="date-tag">2012</span> Workshop/Seminar on IT/Entrepreneurship for final year students and staff, - University of 
+Ilorin
+</span></div>
+                <div class="list-box"><span class="date-tag">2008</span> Training of Study Circle Conveners - Nigeria Union of Teachers Headquarters Abuja</span></div>
+                <div class="list-box"><span class="date-tag">2007</span> National Workshop and Roundtable on Pedagogy - Teachers Registration Council of
+ Nigeria (TRCN) Headquarters Abuja
+</span></div>
+                <div class="list-box"><span class="date-tag">2000</span> Seminar on Roles of Islamic Teachers and Preachers in the Anti – Corruption Campaign  - Abdul Kareem Adisa Foundation</span></div>
+                <div class="list-box"><span class="date-tag">1992</span> Workshop on Religious Dialogue for Peaceful Co-existence - Islamic Education Trust
+ of Nigeria, Minna
+</span></div>
+                <div class="list-box"><span class="date-tag">1991</span> Management of Secondary Education - Nigeria Institute of Management</div>
+            </div>
+        </section>
+
+        <section id="publications ">
+            <h3>Publications</h3>
+            <div style="max-height: 400px; overflow-y: auto;">
+            <div class="list-box"><strong>2025:</strong> Unraveling the Past, Shaping the Future: A Qualitative Study on Historical Development of Colleges of Education in Oyo State (1980-2020). <i>Zamfara International Journal of Sci. Tech. Educ. & Mathematics,</i>. Vol 1(1): 308 -324.<a href="https://zenodo.org/records/15206657" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2025:</strong> Assessment of Demonstration Method on Performance in History Teaching and Learning activities among Secondary School Teachers’ in Kwara State, Nigeria. <i>Zamfara International Journal of Education (ZIJE),  </i>. Vol 5(1): 20-26.<a href="https://zenodo.org/records/15295200" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2025:</strong> Parental Education and Creativity: Exploratory Study of Undergraduates. <i>Yobe Journal of Educational Studies</i>. Vol 2(2). <a href="https://ysu.edu.ng/yojes/assets/files/Vol.2-2_YOJES-FEB-2025.pdf" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2025:</strong> Exploring Historical Monuments in History Education. <i>Ibadan Journal of Educational Studies</i>. <a href="https://ibadanjournalofeducationalstudies.com.ng/issue.php?id=36" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2024:</strong> Social Change in Postmodern Teacher Education in Nigeria. <i>Ilorin Journal of Education</i>. Vol 44(2). <a href="https://ije.unilorinedu.sch.ng/index.php/ije/issue/view/11" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2024:</strong> Advent of the Missionaries and Formal Western Education: The Progress of a Republic-Nigeria. <i>Niger Delta Journal of Education, </i>. Vol 16(2):371 -391.<a href="https://uilspace.unilorin.edu.ng/handle/123456789/15538" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2024:</strong> A Historical Examination of the Evolution of Kwara State School for Special Needs, Ilorin, Nigeria (1999-2020). <i>Journal-Innovations,  </i>. Vol 78 (5); 1311 -1325.<a href="https://journal-innovations.com/publication/2025/78/1313170787" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2023:</strong> Educational Policy Implementation and Human Capital Development in Malaysia. <i>Journal of Education and Social Science</i>. Vol 23(1). <a href="#" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2023:</strong> Educational Policy Implementation and Human Capital Development in Malaysia. <i>Journal of Education and Social Science</i>. Vol 23(1). <a href="#" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> Students’ Perception of Virtual Teaching-Learning in History. <i>Innovative Teaching and Learning Journal</i>. Vol 6(2).<a href="" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> Secondary School Teachers’ Attitude Towards uptake of COVID-19 Vaccination in Kwara State, Nigeria <i>Institute Journal of Studies in Education, </i>. 8 (1); 109 -117  <a href="https://uilspace.unilorin.edu.ng/handle/123456789/13909" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> Stakeholders’ Perception of University Compliance with Covid-19 Prevention Protocols in Kwara State, Nigeria <i>Al-Hikmah Journal of Education, </i>. Vol 8 (2).<a href="" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> Personality Traits and Creativity among Pre-Service Teachers of Public Universities in Nigeria <i>KWASU International Journal of Education, </i>. Vol 7(1): 226 -238.<a href="https://kije.com.ng/index.php/KIJE" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> Teachers’ Views on Utilization of Discussion Method for Teaching History in Senior Secondary Schools in Kwara State, Nigeria. <i>Journal of Humanities Education (JOHE) </i>. Vol 1(1):  1 -15.<a href="https://johe.unilorinedu.sch.ng/index.php/johe" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> World Bank and UNESCO’S Post – Independence Backups in Nigerian Education: Trends in education studies (TRES),  <i>Journal of the Institute of Education, University of Port Harcourt, </i>. Vol 4 (1); 122 – 131.<a href="https://uilspace.unilorin.edu.ng/handle/123456789/13791" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> A comparative analysis of the perception of people on secondary education in the Nigerian and Japanese educational systems. <i>African Journal of Historical Sciences in Education, </i>. Vol 9(1); 34 – 42.<a href="https://uilspace.unilorin.edu.ng/handle/123456789/13780" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> Challenges and Prospects of Privatization of education in Nigeria: Focus on secondary education. <i>African Journal of Historical Sciences in Education,  </i>. Vol 9 (1); 34 -42.<a href="https://uilspace.unilorin.edu.ng/handle/123456789/13782" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> Secondary School Students Perceptions of Problems Associated with Corporal Punishment in Ilorin, Nigeria.  <i>Journal of Education in Developing Areas, </i>. Vol 22 (1); 1 – 7.<a href="https://uilspace.unilorin.edu.ng/items/2ec2d837-78f2-4b80-87ec-cfd0c80938e8" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> Analysis of the emergence of community secondary schools in Ilorin-West Local Government Area, Kwara State (1968-2015). <i>Port Harcourt Journal of Educational Studies (PHAJOES),  </i>. Vol 9 (2): 486-494.<a href="https://uilspace.unilorin.edu.ng/handle/123456789/15539" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> Effect of Brainstorming Instructional Strategy on Reflective Thinking Skills of Pre-Service Teachers in Universities in Kwara South, Nigeria. <i>LASU International Journal of Arts and Social Science Education, </i>. Vol 2(2), 117-124.<a href="https://uilspace.unilorin.edu.ng/handle/123456789/16344" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> Comparative analysis between Teacher Education Goal and Social Change: An Exploratory Study of Nigerian University System. <i>Zamfara International Journal of Education (ZIJE),</i>. Vol 4 (4): 324-331.<a href="file:///C:/Users/HP/Desktop/ZIJE%20Volume%204,%20Number%204,%20November,%202024.pdf" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> Comparative Analysis of History Curriculum Coverage Among Public and Private School Teachers in Ilorin, Kwara State. <i>Al-Lisan International Journal for Linguistic & Literary Studies,</i>. Vol  5 (12), 201-222.<a href="http://ojs.mediu.edu.my/index.php/AIJLLS/issue/view/165" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> History Education Students’ Perception of Virtual Teaching-Learning Process during the Covid-19 Pandemic in Kwara State, Nigeria. <i>Innovative Teaching and Learning Journal, </i>. Vol 6 (2); 24 - 34,.<a href="https://itlj.utm.my/index.php/itlj/issue/view/11" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> Beyond Religion: Promoting Arabic Language Education in Nigeria's Diverse Society. <i>Jurnal Indonesia untuk Kajian Pendidikan,  </i>. Vol 8 (1). 10-17.<a href="https://ejournal.upi.edu/index.php/mimbardik/issue/view/3340" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2022:</strong> Comparative Analysis of Moral Uprightness in Addressing Gambling and CyberCrime Among Experienced and Pre- Service Teachers in Faculty of Education, University of Ilorin. <i>Al-Lisan International Journal for Linguistics & Literary Studies, </i>. 8 (18). 217 -221.<a href="http://ojs.mediu.edu.my/index.php/AIJLLS/issue/view/232" target="_blank">View Article</a></div>
+            <div class="list-box"><strong>2014:</strong> Impact of Boko Haram Crisis on School Attendance in Yobe State. <i>IJEM</i>. Vol 12(1).<a href="https://uilspace.unilorin.edu.ng/items/c73491b4-8276-411d-95b3-332ab8925688" target="_blank">View More</a></div>
+            <div class="list-box"><strong>2011:</strong> How Do Teachers Approach Innovations? Upper Basic School Teacher’s Attitude towards Schools ConNet and Multi-Choice Resource Centres in Ilorin, Nigeria. <i>Conference Proceedings, Official Publication of the Collaboration of the Educatio Faculties in West Africa (CEFWA),  </i>. Page 33-37.<a href="" target="_blank">View Article</a></div>
+            </div>
+        </section>
+
+        <section id="teaching">
+            <h3>Teaching & Projects</h3>
+            <div class="info-grid" style="max-height: 200px; overflow-y: auto;">
+                <div class="info-card"><strong>Postgraduate</strong>HPE 801 (Foundation of Nigerian Education), HPE 802 (Evolution of the Western System of Education), HPE 803 (History of Education Policy in Colonial and Ex-colonial Territories), HPE 804 (Modern Educational Development), HPE 805 (History of Secondary and Higher Education in Nigeria), HPE 806 (Contemporary Problems in Nigeria Education), HPE 807 (Seminar).</div>
+                <div class="info-card"><strong>Undergraduate</strong>AED 301 (Teaching Practice I), AED 401 (Teaching Practice II), AED 499 (Research Projects), ASE 305 (History and Policy of Education in Nigeria), ASE 311 (Primary and Secondary Education in Nigeria), ASE 411 (Post-Secondary and Higher Education in Nigeria), EDU 216 (History and Policy of Education), EDU 311 (Teaching Practice I (Peer Teaching)), EDU 313 (Subject Method II), EDU 411 (Teaching Practice II), EDU 499 (Research Project), PES 101(Introduction to History of Nursery and Primary Education), PES 102 (Introduction to Sociological Foundation of Nursery and Primary Education), PES 104 (Introduction to Childhood Teaching Methods), PES 202 (Introduction to Nursery and Primary Education Curriculum), PES 204 (Childhood Education Teaching Methods I), PES 301 (Issues in Nursery and Primary Education in Nigeria), PES 304 (Childhood Education Teaching Methods II), PES 401 (Comparative Studies of NPE Projects), PES 403 (Practicum in NPE), PES 406 (Nigeria as a Corporate Entity), UIL-HED 101 (Contemporary Problems in the Nigerian Educational System)</div>
+            </div>
+            
+        </section>
+        <section id="supervised">
+            <h3>Supervised M.Ed Projects (On-going 2026)</h3>
+            <ul>
+                <li>OJULARI, Faridat: Historical Development of Primary Education Development in Kwara (1967-1999)</li>
+                <li>AGBOLUAJE, Ayisat: Historical Development of Girls Secondary Schools in Oyo State (1991-2003)</li>
+                <li>ADELODUN, Muhammed: Historical Development of University Education in Kwara State (1975-2023)</li>
+                <li>GARUBA, Yunus: Historical Development of Formal Islamic Schools in Ilorin (1943-2023)</li>
+            </ul>
+        </section>
+
+        <section id="service">
+            <h3>Administrative & Community Service Experience</h3>
+
+            <div class="list-box"><strong>Secretary:</strong> Senior Staff Management Committee, Baboko Community Secondary School (2007 - 2011).</div>
+            <div class="list-box"><strong>Coordinator:</strong> Extra-mural classes for Baboko Ward, Ilorin(2007 - 2011).</div>
+            <div class="list-box"><strong>Head of Department:</strong> Baboko Community Secondary School (2007 - 2011).</div>
+            <div class="list-box"><strong>Union Leadership:</strong> Former Chairman, Nigeria Union of Teachers (NUT), Ilorin West (2005-2011).</div>
+            <div class="list-box"><strong>University Roles:</strong> Examination Officer (2013-2015), Level Adviser (2011-Date), Member Faculty Quality Assurance (2023 - 2025), Teaching Practice Coordinator Sandwich (IOE(2022 - Date)), Student Project Supervision, Department of Arts and Education (2022 - Date).</div>
+            <div class="list-box"><strong>Chairman:</strong>Chairman, Eruda Youths Reconciliation Committee(2022 - 2025).</div>
+            <div class="list-box"><strong>Collation Officer:</strong>Presidential and Federal Constituency General Elections (2023).</div>
+            <div class="list-box"><strong>University Roles:</strong> Member, Quality Assurance Committee Faculty of Education University of Ilorin  (2023-2025), Member, Faculty of Education Quality Assurance Committee  (2023-2025), Member, 300 Level student’s certificates screening committee in faculty of Education (2012-2013), Member, GNS Lectures Monitoring Committee (2013-2014),  Secretary, Review Committee University of Ilorin GNS courses on   (2011-2012), Level Adviser, 400 Level, Department of Arts Education  (2024-2025) Level Adviser, 300 Level, Department of Arts Education  (2023-2024), Teaching Practice Coordinator Sandwich (IOE) (2022 till Date), Level Adviser, 200 Level, Department of Arts Education  (2022-2023), Student Project Supervision, Dept of Arts Education  (2022 to date), Level Adviser, 400 Level, Department of Arts Education (2014-2015), Examination Officer, Department of Arts Education (2013-2015), Co-ordinator, GSE 301 practical in the Dept of Arts and Social Sciences Education</div>
+        </section>
+
+        <section id="honours">
+            <h3>Honours Distinctions and Membrship of Learned Professional Societies</h3>
+
+            <div class="list-box">Member, Association of Academic Qualitative Research Likeminds (AAQREL).               
+2022-Date
+</div>
+            <div class="list-box">Member, Education and Development Postgraduate.  Universiti Teknologi Malaysia
+2018-Date
+</div>
+            <div class="list-box">Teachers Registration Council of Nigeria (Reg. No. 000034630) 		2009-Date</div>
+            <div class="list-box">Member, Historians of Education Development Society of Nigeria (HOEDSON).      
+2006-Date
+</div>
+            <div class="list-box">Member, Islamic Welfare   Foundation of Nigeria 		                    	2000-Date.</div>
+            <div class="list-box">Member, Nigeria Union of Teachers						1993-Date.
+ 
+</div>
+        </section>
+
+        <section id="research">
+            <h3>Research Interest and Commisioned Projects</h3>
+
+            <div class="list-box">Conceptualization of Teacher Education Goal for Social Change among Teacher 
+Education Undergraduates in Nigerian Public Universities  (2023)
+</div>
+            <div class="list-box">A Comparative Study of Girl Child Education Participation in Lagos and Kaduna States, 
+Nigeria  (2006)
+</div>
+            <div class="list-box">Causes and Consequences of Divorce among Ilorin Muslim Married Couples (1991)</div> 
+</div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
